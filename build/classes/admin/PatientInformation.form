@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ea" green="d2" red="d2" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="401" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="41" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="btnComeBack" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel4" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" pref="432" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btnComeBack" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="tblPatients">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="4" rowCount="0">
+                    <Column editable="true" title="Id" type="java.lang.String"/>
+                    <Column editable="true" title="Tc" type="java.lang.String"/>
+                    <Column editable="true" title="&#x130;sim" type="java.lang.String"/>
+                    <Column editable="true" title="Soyisim" type="java.lang.String"/>
+                  </Table>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblPatientsMouseClicked"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblShowName" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="lblShowId" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblShowTc" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="lblShowGender" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblShowBirthPlace" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblShowMail" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblShowPhoneNumber" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblShowAddress" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="lblShowLastName" alignment="0" max="32767" attributes="0"/>
+                              <Component id="lblShowDateOfBirth" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="lblShowBranch" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="125" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="tbxShowTc" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowId" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowName" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowLastName" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowGender" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowPhoneNumber" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowDateOfBirth" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowBirthPlace" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowMail" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                          <Component id="tbxShowBloodType" alignment="1" min="-2" pref="209" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblShowId" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tbxShowId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblShowTc" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tbxShowTc" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblShowName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tbxShowName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblShowLastName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tbxShowLastName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblShowGender" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tbxShowGender" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblShowDateOfBirth" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tbxShowDateOfBirth" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblShowBirthPlace" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tbxShowBirthPlace" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="tbxShowMail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblShowMail" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="tbxShowPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblShowPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblShowBranch" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tbxShowBloodType" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="lblShowAddress" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" pref="79" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblShowId">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Id"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowTc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Tc"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowName">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x130;sim"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowLastName">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Soyisim"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowBranch">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Kan Grubu"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowGender">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cinsiyet"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowAddress">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adres"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowDateOfBirth">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Do&#x11f;um Tarihi"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowBirthPlace">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Do&#x11f;um Yeri"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowMail">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Mail"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblShowPhoneNumber">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Telefon Numaras&#x131;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowId">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowTc">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowName">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowLastName">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowBloodType">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowGender">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowDateOfBirth">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowBirthPlace">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowMail">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tbxShowPhoneNumber">
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="tbxShowAddress">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btnComeBack">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="GER&#x130; D&#xd6;N"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnComeBackActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
